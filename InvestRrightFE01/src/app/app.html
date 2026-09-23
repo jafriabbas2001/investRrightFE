@@ -1,0 +1,35 @@
+<header class="topbar">
+  <a class="brand" routerLink="/" aria-label="InvestRight Capital dashboard home">
+    <img class="brand-logo" src="/logo2.webp" alt="InvestRight Capital" />
+  </a>
+
+  <nav class="main-navigation" aria-label="Main navigation">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+    <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+    <a routerLink="/accounts" routerLinkActive="active">Accounts</a>
+    <a routerLink="/orders" routerLinkActive="active">Orders</a>
+    <a routerLink="/reports" routerLinkActive="active">Reports</a>
+  </nav>
+
+  <div class="sebi-badge" aria-label="SEBI registration number IN/AIF3/26-27/2259">
+    <span class="sebi-dot" aria-hidden="true"></span>
+    <span><small>SEBI REG NO.</small><strong>IN/AIF3/26-27/2259</strong></span>
+  </div>
+
+  <div class="topbar-actions">
+    <button class="icon-button" type="button" aria-label="View notifications">⌁<span class="notification-dot"></span></button>
+    <button class="profile" type="button" aria-label="Open profile menu">
+      <span class="avatar">AK</span><span class="profile-copy"><strong>Anuj Khare</strong><small>Investor</small></span><span class="chevron">⌄</span>
+    </button>
+  </div>
+</header>
+
+<section class="market-ticker" aria-label="Market data ticker">
+  <div class="ticker-label"><span class="live-indicator"></span><strong>MARKET LIVE</strong><span class="ticker-time">NSE · 10:32 AM IST</span></div>
+  <div class="ticker-window"><div class="ticker-track">
+    <div class="ticker-items"><span><b>SENSEX</b> <strong>81,246.72</strong> <em class="up">▲ 0.58%</em></span><span><b>NIFTY 50</b> <strong>24,854.05</strong> <em class="up">▲ 0.47%</em></span><span><b>BANK NIFTY</b> <strong>55,976.30</strong> <em class="down">▼ 0.18%</em></span><span><b>RELIANCE</b> <strong>₹1,431.60</strong> <em class="up">▲ 1.26%</em></span><span><b>HDFCBANK</b> <strong>₹1,987.20</strong> <em class="up">▲ 0.74%</em></span><span><b>INFY</b> <strong>₹1,476.40</strong> <em class="down">▼ 0.36%</em></span></div>
+    <div class="ticker-items" aria-hidden="true"><span><b>SENSEX</b> <strong>81,246.72</strong> <em class="up">▲ 0.58%</em></span><span><b>NIFTY 50</b> <strong>24,854.05</strong> <em class="up">▲ 0.47%</em></span><span><b>BANK NIFTY</b> <strong>55,976.30</strong> <em class="down">▼ 0.18%</em></span><span><b>RELIANCE</b> <strong>₹1,431.60</strong> <em class="up">▲ 1.26%</em></span><span><b>HDFCBANK</b> <strong>₹1,987.20</strong> <em class="down">▼ 0.36%</em></span><span><b>INFY</b> <strong>₹1,476.40</strong> <em class="up">▲ 0.22%</em></span></div>
+  </div></div>
+</section>
+
+<router-outlet />
