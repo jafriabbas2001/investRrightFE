@@ -1,0 +1,156 @@
+<main class="dashboard" aria-labelledby="dashboard-title">
+  <header class="topbar">
+    <a class="brand" routerLink="/" aria-label="InvestRight Capital dashboard home">
+      <img class="brand-logo" src="/logo2.webp" alt="InvestRight Capital" />
+    </a>
+
+    <nav class="main-navigation" aria-label="Main navigation">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+      <a routerLink="/accounts" routerLinkActive="active">Accounts</a>
+      <a routerLink="/orders" routerLinkActive="active">Orders</a>
+      <span class="future-nav-item" title="Reports will be added soon">Reports</span>
+    </nav>
+
+    <div class="sebi-badge" aria-label="SEBI registration number IN/AIF3/26-27/2259">
+      <span class="sebi-dot" aria-hidden="true"></span>
+      <span><small>SEBI REG NO.</small><strong>IN/AIF3/26-27/2259</strong></span>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="icon-button" type="button" aria-label="View notifications">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" /></svg>
+        <span class="notification-dot"></span>
+      </button>
+      <button class="profile" type="button" aria-label="Open profile menu">
+        <span class="avatar">AK</span>
+        <span class="profile-copy"><strong>Anuj Khare</strong><small>Investor</small></span>
+        <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="market-ticker" aria-label="Market data ticker">
+    <div class="ticker-label"><span class="live-indicator"></span><strong>MARKET LIVE</strong><span class="ticker-time">NSE · 10:32 AM IST</span></div>
+    <div class="ticker-window">
+      <div class="ticker-track">
+        <div class="ticker-items">
+          <span><b>SENSEX</b> <strong>81,246.72</strong> <em class="up">▲ 0.58%</em></span>
+          <span><b>NIFTY 50</b> <strong>24,854.05</strong> <em class="up">▲ 0.47%</em></span>
+          <span><b>BANK NIFTY</b> <strong>55,976.30</strong> <em class="down">▼ 0.18%</em></span>
+          <span><b>RELIANCE</b> <strong>₹1,431.60</strong> <em class="up">▲ 1.26%</em></span>
+          <span><b>HDFCBANK</b> <strong>₹1,987.20</strong> <em class="up">▲ 0.74%</em></span>
+          <span><b>INFY</b> <strong>₹1,476.40</strong> <em class="down">▼ 0.36%</em></span>
+          <span><b>TCS</b> <strong>₹3,218.70</strong> <em class="up">▲ 0.22%</em></span>
+        </div>
+        <div class="ticker-items" aria-hidden="true">
+          <span><b>SENSEX</b> <strong>81,246.72</strong> <em class="up">▲ 0.58%</em></span>
+          <span><b>NIFTY 50</b> <strong>24,854.05</strong> <em class="up">▲ 0.47%</em></span>
+          <span><b>BANK NIFTY</b> <strong>55,976.30</strong> <em class="down">▼ 0.18%</em></span>
+          <span><b>RELIANCE</b> <strong>₹1,431.60</strong> <em class="up">▲ 1.26%</em></span>
+          <span><b>HDFCBANK</b> <strong>₹1,987.20</strong> <em class="up">▲ 0.74%</em></span>
+          <span><b>INFY</b> <strong>₹1,476.40</strong> <em class="down">▼ 0.36%</em></span>
+          <span><b>TCS</b> <strong>₹3,218.70</strong> <em class="up">▲ 0.22%</em></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">Overview <span>/</span> Dashboard</nav>
+
+    <div class="page-heading">
+      <div>
+        <p class="eyebrow">Portfolio overview</p>
+        <h1 id="dashboard-title">Good morning, Anuj</h1>
+        <p class="subtitle">Here is how your investments are performing today.</p>
+      </div>
+      <div class="heading-actions">
+        <button class="account-selector" type="button">
+          <span class="status-dot"></span> All linked accounts
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+        </button>
+        <button class="refresh-button" type="button" aria-label="Refresh dashboard data">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0 2 5.3M20 4v7h-7" /></svg>
+          Refresh
+        </button>
+      </div>
+    </div>
+
+    <p class="updated-at">Last updated today, 10:32 AM <span aria-hidden="true">•</span> Market is open</p>
+
+    <section class="metric-grid" aria-label="Portfolio summary">
+      <article class="metric-card portfolio-card">
+        <div class="metric-label"><span>Total portfolio value</span><button type="button" aria-label="Portfolio value information">i</button></div>
+        <strong class="metric-value">₹24,86,240</strong>
+        <p class="positive"><span>↗</span> ₹38,420 <span class="muted">(1.57%) today</span></p>
+      </article>
+      <article class="metric-card">
+        <div class="metric-label"><span>Invested value</span><button type="button" aria-label="Invested value information">i</button></div>
+        <strong class="metric-value">₹21,74,850</strong>
+        <p class="neutral">Across 3 linked accounts</p>
+      </article>
+      <article class="metric-card">
+        <div class="metric-label"><span>Overall P&amp;L</span><button type="button" aria-label="Overall profit and loss information">i</button></div>
+        <strong class="metric-value positive-text">+₹3,11,390</strong>
+        <p class="positive"><span>↗</span> 14.32% <span class="muted">all time returns</span></p>
+      </article>
+      <article class="metric-card">
+        <div class="metric-label"><span>Available cash</span><button type="button" aria-label="Available cash information">i</button></div>
+        <strong class="metric-value">₹1,42,500</strong>
+        <p class="neutral">Ready to invest</p>
+      </article>
+    </section>
+
+    <section class="dashboard-grid primary-grid">
+      <article class="panel performance-panel">
+        <div class="panel-header">
+          <div><h2>Portfolio performance</h2><p>Value across all accounts</p></div>
+          <div class="period-picker" aria-label="Performance period"><button type="button">1D</button><button type="button">1W</button><button type="button" class="active">1M</button><button type="button">1Y</button><button type="button">ALL</button></div>
+        </div>
+        <div class="chart-summary"><strong>₹24,86,240</strong><span class="positive">+₹2,08,620 (9.16%)</span></div>
+        <div class="chart" role="img" aria-label="Portfolio value chart showing a generally rising trend over one month">
+          <div class="chart-labels"><span>₹25L</span><span>₹24L</span><span>₹23L</span><span>₹22L</span></div>
+          <svg viewBox="0 0 620 190" preserveAspectRatio="none" aria-hidden="true">
+            <defs><linearGradient id="chart-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2a9d7f" stop-opacity=".22"/><stop offset="1" stop-color="#2a9d7f" stop-opacity="0"/></linearGradient></defs>
+            <path class="chart-area" d="M0 155 C30 146 40 159 68 142 S100 132 125 139 S152 121 180 126 S210 109 240 118 S276 86 305 101 S340 89 370 93 S399 69 429 76 S455 47 486 65 S520 52 545 48 S582 29 620 19 V190 H0Z"/>
+            <path class="chart-line" d="M0 155 C30 146 40 159 68 142 S100 132 125 139 S152 121 180 126 S210 109 240 118 S276 86 305 101 S340 89 370 93 S399 69 429 76 S455 47 486 65 S520 52 545 48 S582 29 620 19"/>
+            <circle cx="620" cy="19" r="5"/>
+          </svg>
+          <div class="chart-dates"><span>Aug 22</span><span>Aug 29</span><span>Sep 05</span><span>Sep 12</span><span>Sep 19</span></div>
+        </div>
+      </article>
+
+      <article class="panel allocation-panel">
+        <div class="panel-header"><div><h2>Asset allocation</h2><p>Based on current market value</p></div><button class="more-button" type="button" aria-label="More asset allocation options">•••</button></div>
+        <div class="donut-wrap"><div class="donut"><div><strong>₹24.9L</strong><span>Total value</span></div></div></div>
+        <ul class="allocation-list">
+          <li><span class="allocation-name"><i class="equity"></i>Equity</span><strong>62.4%</strong><span>₹15.52L</span></li>
+          <li><span class="allocation-name"><i class="mutual"></i>Mutual funds</span><strong>24.8%</strong><span>₹6.17L</span></li>
+          <li><span class="allocation-name"><i class="debt"></i>Debt</span><strong>8.1%</strong><span>₹2.01L</span></li>
+          <li><span class="allocation-name"><i class="cash"></i>Cash</span><strong>4.7%</strong><span>₹1.16L</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="dashboard-grid secondary-grid">
+      <article class="panel accounts-panel">
+        <div class="panel-header"><div><h2>Linked accounts</h2><p>3 accounts connected</p></div><a href="/accounts">Manage accounts <span>→</span></a></div>
+        <div class="account-list">
+          <div class="account-row"><span class="broker-logo groww">G</span><div><strong>Groww</strong><small>Account ending in 4829</small></div><div class="account-value"><strong>₹12,46,820</strong><span class="positive">+1.84%</span></div></div>
+          <div class="account-row"><span class="broker-logo zerodha">Z</span><div><strong>Zerodha</strong><small>Account ending in 9012</small></div><div class="account-value"><strong>₹9,82,420</strong><span class="positive">+0.96%</span></div></div>
+          <div class="account-row"><span class="broker-logo icici">I</span><div><strong>ICICI Direct</strong><small>Account ending in 2367</small></div><div class="account-value"><strong>₹2,56,990</strong><span class="negative">−0.21%</span></div></div>
+        </div>
+      </article>
+
+      <article class="panel orders-panel">
+        <div class="panel-header"><div><h2>Recent orders</h2><p>Your latest trading activity</p></div><a href="/orders">View all <span>→</span></a></div>
+        <div class="order-list">
+          <div class="order-row"><span class="order-icon buy">B</span><div><strong>HDFC Bank</strong><small>Buy · 20 shares · Today, 10:15 AM</small></div><div class="order-status"><strong>₹1,692.40</strong><span class="complete">Executed</span></div></div>
+          <div class="order-row"><span class="order-icon sell">S</span><div><strong>Tata Motors</strong><small>Sell · 15 shares · Yesterday, 3:02 PM</small></div><div class="order-status"><strong>₹684.75</strong><span class="complete">Executed</span></div></div>
+          <div class="order-row"><span class="order-icon buy">B</span><div><strong>Infosys</strong><small>Buy · 10 shares · Today, 10:28 AM</small></div><div class="order-status"><strong>₹1,475.00</strong><span class="pending">Pending</span></div></div>
+        </div>
+      </article>
+    </section>
+  </section>
+</main>
